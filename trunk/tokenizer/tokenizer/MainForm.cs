@@ -44,7 +44,7 @@ namespace tokenizer
                 Match m = Regex.Match( tbInput.Text, k.Key );
                 while( m.Success )
                 {
-                    tbOutput.Text += "* \"" + m.ToString() + "\" is " + k.Value + "\r\n";
+                    tbOutput.Text += "\"" + m.ToString() + "\" is " + k.Value + "\r\n";
                     m = m.NextMatch();
                 }
             }
